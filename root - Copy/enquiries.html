@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thusi's Bakery - Enquiries</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS_assets/mystyles.css">
+
+    <!-- JS -->
+    <script src="js_assets/myjavascript.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+    <h1>Thusi's Bakery</h1>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="enquiries.html">Enquiries</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- ENQUIRY FORM -->
+<section class="container">
+
+    <div class="card">
+
+        <h2>Bakery Enquiry Form</h2>
+
+        <form id="enquiry-form">
+
+            <label>Full Name</label><br>
+            <input type="text" name="fullname" required><br><br>
+
+            <label>Email Address</label><br>
+            <input type="email" name="email" required><br><br>
+
+            <label>Phone Number</label><br>
+            <input type="tel" name="phone" required><br><br>
+
+            <label>Select Product</label><br>
+            <select name="product">
+                <option value="Bread">Bread</option>
+                <option value="Vetkoek">Vetkoek (Magwinya)</option>
+                <option value="Muffins">Muffins</option>
+                <option value="Birthday Cake">Birthday Cake</option>
+                <option value="Wedding Cake">Wedding Cake</option>
+                <option value="Custom">Custom Order</option>
+            </select>
+
+            <br><br>
+
+            <label>Quantity</label><br>
+            <input type="number" name="quantity" min="1"><br><br>
+
+            <label>Delivery Method</label><br>
+
+            <input type="radio" name="delivery" value="Collection" required> Collection
+            <input type="radio" name="delivery" value="Delivery" required> Delivery
+
+            <br><br>
+
+            <label>Order/Event Date</label><br>
+            <input type="date" name="date"><br><br>
+
+            <label>Additional Information</label><br>
+
+            <textarea name="message" rows="5" cols="40"
+            placeholder="Enter your special requests here..."></textarea>
+
+            <br><br>
+
+            <button type="submit">Submit Enquiry</button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Thusi's Bakery. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
